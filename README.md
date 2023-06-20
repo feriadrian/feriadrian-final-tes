@@ -1,6 +1,6 @@
 # final_tes_feri_adrian
 
-A new Flutter project.
+Halo Perkenalkan nama saya Feri Adrian,ini merupakan proyek final assesment MSIB IV kampus gratis M-Knows Consulting
 
 ## Getting Started
 
