@@ -7,6 +7,8 @@ import 'main_view.dart';
 class MainPage extends StatelessWidget {
   const MainPage({super.key});
 
+  //untuk hasilkan saya taro di readme ya bang
+
   @override
   Widget build(BuildContext context) {
     return BlocProvider(

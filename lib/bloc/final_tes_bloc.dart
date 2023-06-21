@@ -18,6 +18,8 @@ class FinalTesBloc extends Bloc<FinalTesEvent, FinalTesState> {
     on<FinalTesEventGetResultNumber4>(_onGetResultNumber4);
   }
 
+//untuk hasilnya saya taro di readme ya bang
+
   Future<void> _onGetResultNumber1(
       FinalTesEventGetResultNumber1 event, Emitter<FinalTesState> emit) async {
     emit(state.copyWith(status: Status.loading));

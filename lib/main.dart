@@ -8,6 +8,8 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+//untuk hasilnya saya taro di readme ya bang
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
