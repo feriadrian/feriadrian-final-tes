@@ -25,7 +25,7 @@ class FinalTesBloc extends Bloc<FinalTesEvent, FinalTesState> {
     emit(state.copyWith(status: Status.loading));
     final List<String> result = [];
 
-    for (var i = 1; i <= int.parse(event.number.toString()); i++) {
+    for (var i = 1; i <= event.number; i++) {
       result.add(i.toString());
     }
     emit(state.copyWith(result: result, status: Status.succes));
@@ -39,11 +39,11 @@ class FinalTesBloc extends Bloc<FinalTesEvent, FinalTesState> {
       status: Status.loading,
     ));
 
-    for (var i = 1; i <= int.parse(event.number.toString()); i++) {
+    for (var i = 1; i <= event.number; i++) {
       result.add(i.toString());
 
-      if (i == int.parse(event.number.toString())) {
-        for (var j = int.parse(event.number.toString()) - 1; j > 0; j--) {
+      if (i == event.number) {
+        for (var j = event.number - 1; j > 0; j--) {
           result.add(j.toString());
         }
       }
@@ -57,7 +57,7 @@ class FinalTesBloc extends Bloc<FinalTesEvent, FinalTesState> {
     final List<String> result = [];
     int firstIndex = 10;
 
-    for (var i = 0; i < int.parse(event.number.toString()); i++) {
+    for (var i = 0; i < event.number; i++) {
       result.add((firstIndex + i * 11).toString());
     }
     emit(state.copyWith(result: result, status: Status.succes));
@@ -68,7 +68,7 @@ class FinalTesBloc extends Bloc<FinalTesEvent, FinalTesState> {
     emit(state.copyWith(status: Status.loading));
     final List<String> result = [];
 
-    for (var i = 1; i < int.parse(event.number.toString()) + 1; i++) {
+    for (var i = 1; i < event.number + 1; i++) {
       if (i % 5 == 0) {
         result.add('Lima');
       } else if (i % 7 == 0) {
